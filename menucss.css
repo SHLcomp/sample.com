@@ -71,12 +71,12 @@ li{
 
 .bar{
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 50px;
+    height: 6px;
     margin: 5px auto;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    background-color: white;
+    background-color: black;
 }
 .title{
     color: gold;
