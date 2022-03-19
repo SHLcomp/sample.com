@@ -113,11 +113,11 @@ li{
 
     .nav-menu{
         position:  fixed;
-        left: -100%;
-        top: 55px;
+        right: -100%;
+        top: 69px;
         gap: 0;
         flex-direction: column;
-        background-color: black;
+        background-color: rgb(179, 170, 98);
         width: 100%;
         text-align: center;
         transition: 0.5s; 
@@ -129,10 +129,10 @@ li{
         margin: 16px 0;
     }
     .nav-menu.active{
-        left: 0;
+        right: 0;
     }
     .nav-branding{
-        font-size: 26px;
+        font-size: 4rem;
         text-align: center;
     }
     .nav-bar{
@@ -142,4 +142,83 @@ li{
         text-align: center;
         padding: 0 100px;
     }
+    .image{
+        position: absolute;
+        top: 3cm;
+        left: 2cm;
+        width: 535px;
+        height: 317px;
+        display: inline;
+    }
+    .img-ourstory{
+        position: absolute;
+        width: 326px;
+        height: 183.5px;
+        top: 13cm;
+        left: 8.5cm;
+        border: black 4px;
+    }
+    
+.ourstory{
+    color: gold;
+    font-size: 2rem;
+    position: absolute;
+    top: 13cm;
+    left: 1cm;
+}
+.p-ourstory{
+    position: absolute;
+    top: 15cm;
+    left: 1cm;
+    width: 300px;
+}
+.btn-ourstory{
+    position: absolute;
+    top: 19cm;
+    left: 3cm;
+    padding: 20px 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn-ourstory:hover{
+    background-color: wheat;
+}
+.dish2{
+    width: 233.4px;
+    height: 212px;
+    padding: 0 20px;
+}
+.all-dishes{
+    position: absolute;
+    top: 26cm;
+    left: 1cm;
+    display: list-item;
+}
+
+
+.ourspecialties{
+    position: absolute;
+    top: 22cm;
+    left: 10cm;
+    width: 100%;
+}
+.p-ourspecialties{
+    position: absolute;
+    top: 24cm;
+    left: 7cm;
+    font-size: 1rem;
+    width: 100%;
+}
+.dish1{
+    padding: 20px;
+}
+.dish2{
+    padding: 20px;
+}
+.dish3{
+    padding: 20px;
+}
+
 }
