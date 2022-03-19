@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+li{
+    list-style: none;
+}
+.a{
+    color: gold;
+    text-decoration: none;
+}
+#chosen{
+    text-decoration: underline black;
+}
+
+.nav-item:nth-child(1){
+    padding: 0 25px;
+}
+.nav-branding{
+    color: gold;
+    font-style: bold;
+    font-size: 2.8rem;
+    text-decoration: none;
+}
+.nav-branding.active{
+    color: gold;
+}
+.nav-logo{
+    padding: 23px 20px;
+}
+.nav-bar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 24px;
+}
+.nav-menu, .nav-branding{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    transition: 0.3s;
+}
+.nav-menu{
+    width: 100%;
+    padding: 0 130px;
+}
+.a{
+    transition: 0.5s ease;
+}
+
+
+.a:hover{
+    color: rgb(158, 24, 24);
+    font-style: bold;
+}
+
+.burg{
+    display: none;
+    cursor: pointer;
+}
+
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+}
+
+.image{
+    position: absolute;
+    top: 3cm;
+    left: 6cm;
+    width: 900px;
+    height: 504px;
+    display: inline;
+}
+.img-ourstory{
+    position: absolute;
+    width: 652px;
+    height: 367px;
+    top: 19cm;
+    left: 14cm;
+}
+.ourstory{
+    color: gold;
+    font-size: 2rem;
+    position: absolute;
+    top: 19cm;
+    left: 3cm;
+}
+.p-ourstory{
+    position: absolute;
+    top: 22cm;
+    left: 3cm;
+    width: 350px;
+}
+.btn-ourstory{
+    position: absolute;
+    top: 26cm;
+    left: 5cm;
+    padding: 20px 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn-ourstory:hover{
+    background-color: wheat;
+}
+.dish2{
+    width: 233.4px;
+    height: 212px;
+    padding: 0 20px;
+}
+.all-dishes{
+    position: absolute;
+    top: 37cm;
+    left: 8cm;
+    
+
+}
+
+
+.ourspecialties{
+    position: absolute;
+    top: 31cm;
+    left: 14cm;
+}
+.p-ourspecialties{
+    position: absolute;
+    top: 34cm;
+    left: 9cm;
+    font-size: 1.2rem;
+}
+@media screen and (min-width: 200px) and (min-height: 400px) and (max-width: 800px) and (max-height: 800px){
+    
+
+    
+     
+        .burg{
+            display: block;
+            margin: 10px -20px;
+        }
+    
+        
+    .nav-logo{
+        position: absolute;
+        left: -14px;
+        top: -7px;
+    }
+    
+    .burg.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .burg.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burg.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position:  fixed;
+        left: -100%;
+        top: 55px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s; 
+    }
+    .nav-item:hover{
+        color: rgb(158, 24, 24);
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .nav-branding{
+        font-size: 26px;
+        text-align: center;
+    }
+    .nav-bar{
+        min-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0 100px;
+    }
+}
